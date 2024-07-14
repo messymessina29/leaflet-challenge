@@ -4,7 +4,7 @@ Source: "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojs
 
 Citations used from Xpert Learning Assistant:
 
-# lines 15-29: Color styles from Leaflet
+lines 15-29: Color styles from Leaflet
 function markerColor(depth) {
         if (depth > 90) {
             return "#ea2c2c";
@@ -20,7 +20,7 @@ function markerColor(depth) {
             return "#98ee00";
         }
     }
-# lines 44-52: Calling the circle marker and adding pointToLayer and the styling to it
+lines 44-52: Calling the circle marker and adding pointToLayer and the styling to it
 pointToLayer: function (feature, latlng) {
             return L.circleMarker(latlng, {
                 radius: markerSize(feature.properties.mag),
@@ -30,7 +30,7 @@ pointToLayer: function (feature, latlng) {
                 opacity: 1,
                 fillOpacity: 0.8
             });
-# lines 104-110: Creating the style of the legend using HTML & CSS
+lines 104-110: Creating the style of the legend using HTML & CSS
   dpth.forEach(function(limit, index) {
         labels.push(
             '<li><span style="background-color: ' + colors[index] + '"></span>' +
@@ -38,7 +38,7 @@ pointToLayer: function (feature, latlng) {
             '</li>'
         );
     });
-# CSS Styling located in style.css file
+CSS Styling located in style.css file
 .info.legend {
   background-color: white;
   padding: 10px;
